@@ -1,0 +1,38 @@
+li {
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.envelope {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 1000px;
+  height: 500px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centered {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stamp {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid black;
+  width: 60px;
+  height: 80px;
+}
