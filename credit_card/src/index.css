@@ -1,0 +1,39 @@
+.credit-card {
+  background-color: darkblue;
+  width: 500px;
+  height: 200px;
+  border: 0 solid darkblue;
+  border-radius: 3%;
+  color: white;
+}
+
+.large-text {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.1em 0.6em 0.6em 1em;;
+  font-size: 40px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mid-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.small-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin: 0 10px;
+}
