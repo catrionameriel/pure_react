@@ -1,0 +1,41 @@
+.heading {
+  font-family: helvetica;
+  font-size: 50px;
+  color: blue
+}
+
+.paragraph {
+  font-family: helvetica;
+  font-size: 20px;
+  color: white
+}
+
+.small-image {
+  width: 20%;
+  height: 20%
+}
+
+.has-border {
+  border: 2px solid blue;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.is-column {
+  flex-direction: column;
+}
+
+.has-small-margin-bottom {
+  margin-bottom: 5px;;
+}
