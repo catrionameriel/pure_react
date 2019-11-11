@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 import './index.css';
 
 const email = {
@@ -38,6 +39,10 @@ function Info( {info} ) {
   )
 }
 
+Info.propTypes = {
+  info: PropTypes.string.isRequired
+}
+
 function Date({ info }) {
   return (
     <span className="has-bold-text">
@@ -46,12 +51,20 @@ function Date({ info }) {
   )
 }
 
+Date.propTypes = {
+  info: PropTypes.string.isRequired
+}
+
 function Message({ message }) {
   return (
     <span>
       {message}
     </span>
   )
+}
+
+Message.propTypes = {
+  message: PropTypes.string.isRequired
 }
 
 ReactDOM.render(<Inbox email={email} />, document.getElementById('root'));
