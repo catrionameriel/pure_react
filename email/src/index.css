@@ -1,0 +1,48 @@
+body {
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.is-flex-1 {
+  flex: 1 0 0;
+}
+
+.is-display-flex {
+  display: flex;
+}
+
+.is-column {
+  flex-direction: column;
+}
+
+.is-aligned-center {
+  align-items: center;
+}
+
+.has-bold-text {
+  font-weight: 600;
+}
+
+.grey-border {
+  border: 1px lightgrey solid;
+}
+
+.has-small-margin-bottom {
+  margin-bottom: 5px;
+}
+
+.has-medium-margin-right {
+  margin-right: 10px;
+}
+
+.has-medium-padding-all-around {
+  padding: 10px;
+}
+
