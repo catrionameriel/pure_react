@@ -1,0 +1,24 @@
+body {
+  font-family: Impact, sans-serif;
+}
+
+.is-display-flex {
+  display: flex;
+}
+
+.is-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.has-red-text {
+  color: red;
+}
+
+svg.is-red {
+  fill: red;
+}
+
+.is-faded-red {
+  background-color: rgba(255,0,0, 0.3);
+}
