@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import Time from './time';
+import FileList from './file/list';
 import './index.css';
 
 const testFiles = [
@@ -40,75 +40,5 @@ function App() {
     </>
   )
 };
-
-function FileList( {files} ) {
-  return (
-    <ul className="file-list">
-      {files.map(file => (
-        <FileListItem key={file.id} file={file} />
-      ))}
-    </ul>
-  )
-};
-
-FileList.propTypes = {
-  files: PropTypes.array
-};
-
-function FileListItem( {file} ) {
-  return (
-    <li className="file-list-item">
-      <FileName name={file.name} type={file.type} />
-      <CommitMessage message={file.latestCommit.message} />
-      <Time time={file.updated_at} />
-    </li>
-  )
-};
-
-FileListItem.propTypes = {
-  file: PropTypes.object.isRequired
-};
-
-function FileName( {name, type}) {
-  return (
-    <div className="file-list-item-name">
-      <FileIcon type={type} />
-      <span>
-        {name}
-      </span>
-    </div>
-  )
-};
-
-FileName.propTypes = {
-  name: PropTypes.string
-}
-
-function FileIcon( {type} ) {
-  const icons = {
-    'folder': 'fas fa-folder',
-    'file': 'far fa-file'
-  }
-  return (
-    <i className={`file-list-item-name-icon ${icons[type]}`} alt="file-icon" />
-  )
-};
-
-FileName.propTypes = {
-  type: PropTypes.string.isRequired
-};
-
-function CommitMessage( {message} ) {
-  return (
-    <span className="file-list-item-message">
-      {message}
-    </span>
-  )
-};
-
-CommitMessage.propTypes = {
-  message: PropTypes.string.isRequired
-};
-
 
 ReactDOM.render(<App />, document.getElementById('root'));
