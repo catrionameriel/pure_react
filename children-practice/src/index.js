@@ -16,11 +16,11 @@ function Children() {
         <p>3</p>
         <p>4</p>
       </LastChildOnly>
-      <Head number={7}>
-        <p>Don't show this</p>
-        <p>Don't show this</p>
-        <p>Don't show this</p>
-        <p>Don't show this</p>
+      <Head number={4}>
+        <p>show this</p>
+        <p>show this</p>
+        <p>show this</p>
+        <p>show this</p>
         <p>Don't show this</p>
         <p>Don't show this</p>
         <p>Don't show this</p>
@@ -61,9 +61,14 @@ function LastChildOnly( {children} ) {
 }
 
 function Head(props) {
+  const elements = React.Children.map(props.children, (child, index) => {
+    if(index < props.number) {
+      return child
+    }
+  })
   return (
     <div>
-      {props.number}
+      {elements}
     </div>
   )
 }
